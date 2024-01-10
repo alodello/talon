@@ -4,6 +4,9 @@ pipeline {
 	stage('version'){
 		steps{
 			bat 'cd\'
+		}
+		steps{
+			bat 'cd\'
 			bat 'python --version'
 		}
 	}
