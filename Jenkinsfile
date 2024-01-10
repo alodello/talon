@@ -1,13 +1,9 @@
 pipeline {
-    agent any
-    environment {
-        // Укажите путь к вашему существующему виртуальному окружению
-        PYTHON_ENV = 'C:\Users\alex2\AppData\Local\Programs\Python\Python310\Scripts\'
-    }
+    agent any    
     stages {
 	stage('version'){
 		steps{
-			bat 'python --version'
+			bat 'python -V'
 		}
 	}
         // stage('Run Tasks in Parallel') {
