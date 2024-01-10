@@ -3,7 +3,8 @@ pipeline {
     stages {
 	stage('version'){
 		steps{
-			bat 'pytest test_mails_existence.py'
+			bat 'cd \'
+			bat 'python --version'
 		}
 	}
         // stage('Run Tasks in Parallel') {
