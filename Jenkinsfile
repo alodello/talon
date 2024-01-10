@@ -4,7 +4,7 @@ pipeline {
     stages {
 	stage('version'){
 		steps{
-			bat 'python --version'
+			bat 'py'
 		}
 	}
         // stage('Run Tasks in Parallel') {
